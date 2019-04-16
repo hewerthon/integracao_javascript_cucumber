@@ -1,8 +1,4 @@
-import Config from 'protractor';
-import browser from 'protractor';
-
-
-export const config = {
+exports.config = {
     directConnect: true,
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
