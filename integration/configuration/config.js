@@ -6,12 +6,12 @@ export const config = {
     directConnect: true,
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
-    specs: ['../../features/demo_outline.feature'],
+    specs: ['../../features/demo.feature'],
     cucumberOpts: {
         format:'json:./cucumber_resport.json',
         //tags:["@regressivetest"],
         require: [
-            '../scenarios/timeout.js', '../scenarios/demo_outline.js'
+            '../scenarios/timeout.js', '../scenarios/demo.js'
         ]
     },
     capabilities: {
